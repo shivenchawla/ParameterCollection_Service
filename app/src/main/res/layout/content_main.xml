@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.recordservice.chawls.recordservice_v1.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power Consumption"
+        android:id="@+id/textPowerConsumption" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Services"
+        android:id="@+id/button2"
+        android:onClick="startService"
+        android:layout_below="@+id/textPowerConsumption"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Services"
+        android:id="@+id/button"
+        android:onClick="stopService"
+        android:layout_below="@id/button2"
+        android:layout_alignLeft="@id/button2"
+        android:layout_alignStart="@id/button2"
+        android:layout_alignRight="@id/button2"
+        android:layout_alignEnd="@id/button2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Area Code"
+        android:id="@+id/textLocationAreaCode"
+        android:onClick=""
+        android:layout_below="@id/textPowerConsumption"
+        android:layout_alignLeft="@id/textPowerConsumption"
+        android:layout_alignStart="@id/textPowerConsumption"
+        android:layout_alignRight="@id/textPowerConsumption"
+        android:layout_alignEnd="@id/textPowerConsumption" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cell ID"
+        android:id="@+id/textCellID"
+        android:onClick=""
+        android:layout_below="@id/textLocationAreaCode"
+        android:layout_alignLeft="@id/textLocationAreaCode"
+        android:layout_alignStart="@id/textLocationAreaCode"
+        android:layout_alignRight="@id/textLocationAreaCode"
+        android:layout_alignEnd="@id/textLocationAreaCode" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logs"
+        android:id="@+id/textLog"
+        android:onClick=""
+        android:layout_below="@id/textCellID"
+        android:layout_alignLeft="@id/textCellID"
+        android:layout_alignStart="@id/textCellID"
+        android:layout_alignRight="@id/textCellID"
+        android:layout_alignEnd="@id/textCellID" />
+</RelativeLayout>
